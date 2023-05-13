@@ -11,7 +11,12 @@
   position: relative;
 }
 
-.card-entry {
+.picture-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.picture-wrapper .card-entry {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -25,7 +30,7 @@
   opacity: 0;
 }
 
-.twoitems.block:hover .card-entry {
+.picture-wrapper:hover .card-entry {
   opacity: 1;
   transform: translateY(-80%);
 }
