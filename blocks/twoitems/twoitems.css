@@ -26,9 +26,9 @@
   transform: translateY(100%);
 }
 
-.card-entry:hover {
+.twoitems.block:hover .card-entry {
   opacity: 1;
-  transform: translateY(0%);
+  transform: translateY(-33%);
 }
 
 .card-entry > div {
