@@ -11,12 +11,17 @@
   position: relative;
 }
 
-.picture-wrapper {
+.twoitems.block picture {
   position: relative;
   overflow: hidden;
 }
 
-.picture-wrapper .card-entry {
+.twoitems.block picture:hover + .card-entry {
+  opacity: 1;
+  transform: translateY(-20%);
+}
+
+.card-entry {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -25,14 +30,9 @@
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.35s;
+  transition: transform 0.35s, opacity 0.35s;
   transform: translateY(100%);
   opacity: 0;
-}
-
-.picture-wrapper:hover .card-entry {
-  opacity: 1;
-  transform: translateY(-80%);
 }
 
 .card-entry > div {
