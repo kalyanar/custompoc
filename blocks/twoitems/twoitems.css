@@ -89,9 +89,9 @@
 
 .card-entry {
   position: absolute;
-  bottom: 0;
+  bottom: -102px;
   left: 0;
-/*  width: 100%;*/
+  max-width: 87%;
   background-color: #f5f5f5;
   border-radius: 10px;
   padding: 20px;
@@ -132,7 +132,7 @@
   align-items: flex-start;*/
     display: flex;
   justify-content: space-between;
-  align-items: center;
+/*  align-items: center;*/
   margin-bottom: 20px;
 }
 
