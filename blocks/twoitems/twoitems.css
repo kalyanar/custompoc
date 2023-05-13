@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .twoitems.block > div {
@@ -18,7 +18,7 @@
 
 .twoitems.block picture:hover + .card-entry {
   opacity: 1;
-  transform: translateY(-20%);
+  transform: translateY(-80%);
 }
 
 .card-entry {
