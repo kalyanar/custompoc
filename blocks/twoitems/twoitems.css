@@ -91,7 +91,7 @@
   position: absolute;
   bottom: -120px;
   left: 0;
-  max-width: 87.5%;
+  width: 87.5%;
   background-color: #f5f5f5;
   border-radius: 10px;
 /*  padding: 20px;*/
