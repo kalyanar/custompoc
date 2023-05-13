@@ -62,6 +62,10 @@
   color: #555;
 }
 */
+.twoitems.block picture {
+  position: relative;
+  overflow: hidden;
+}
 
 .twoitems.block {
   display: flex;
