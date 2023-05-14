@@ -68,7 +68,11 @@
   font-size: 14px;
   color: #555;
 }*/
-
+ .twoitems-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; /* Adjust the gap as needed */
+  }
 .twoitems.block picture {
   position: relative;
   overflow: hidden;
