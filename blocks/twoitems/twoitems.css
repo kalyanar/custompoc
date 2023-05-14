@@ -93,11 +93,11 @@
 
 .card-entry {
   position: absolute;
-  bottom: -120px;
+  bottom: -140px;
   left: 0;
   width: 100%;
   background-color: #f5f5f5;
-  border-radius: 10px;
+/*  border-radius: 10px;*/
 /*  padding: 20px;*/
 /*  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);*/
 /*  transition: transform 0.35s;*/
