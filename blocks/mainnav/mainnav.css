@@ -1,0 +1,53 @@
+/* CSS for collapsible menu */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li > ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+}
+
+ul li:hover > ul {
+  display: block;
+}
+
+ul li > ul li {
+  margin-top: 10px;
+}
+
+ul li > ul li:first-child {
+  margin-top: 0;
+}
+
+/* CSS for toggle icons */
+ul li:before {
+  content: '+';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+ul li.collapsed:before {
+  content: '-';
+}
+
+/* CSS for link styling */
+ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
