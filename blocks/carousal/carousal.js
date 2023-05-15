@@ -17,8 +17,9 @@ const isDesktop = window.matchMedia('(min-width: 900px)');
 export default async function decorate(block) {
   // fetch nav content
   const navMeta = getMetadata('nav');
-  const navPath = 'https://main--audemarspiguet-careers--hlxsites.hlx.page/drafts/asthabharga/index.plain.html';
-  const resp = await fetch(`${navPath}`);
+  const navPath = navMeta ? new URL(navMeta).pathname : '/newcarousal';
+  const resp = await fetch(`${navPath}.plain.html`);
+
   if (resp.ok) {
     const html = await resp.text();
 		const htmldecoded=decodeHtml(html)
