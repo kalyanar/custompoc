@@ -51,13 +51,19 @@ nextArrow.textContent = 'Next';
 // Append the arrow elements to the carousel container
 carouselContainer.appendChild(prevArrow);
 carouselContainer.appendChild(nextArrow);
-  block.append(divv);
-//  block.append(txt)
-  $('.carousel').slick({
-    arrows: true,
+carouselContainer.attr('id', 'myCarousel');
+carouselContainer.slick({
+   arrows: true,
     prevArrow: $('.slick-prev'),
     nextArrow: $('.slick-next')
-  });
+});
+  block.append(divv);
+//  block.append(txt)
+  // $('.carousel').slick({
+  //   arrows: true,
+  //   prevArrow: $('.slick-prev'),
+  //   nextArrow: $('.slick-next')
+  // });
 }
   
 }
