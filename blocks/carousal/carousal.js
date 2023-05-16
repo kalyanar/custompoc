@@ -53,6 +53,7 @@ carouselContainer.appendChild(prevArrow);
 carouselContainer.appendChild(nextArrow);
   block.append(divv);
 //  block.append(txt)
+  
 }
   
 }
