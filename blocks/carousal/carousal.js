@@ -33,6 +33,23 @@ export default async function decorate(block) {
 	  var divv=document.createElement("div")
 	  divv.innerHTML=decodeHtmlEntity(txt.value).replace(/&lt;/g,'<').replace(/&gt;/g,'>');
 	 // console.log(decodeHtmlEntity(txt.value).replace(/&lt;/g,'<').replace(/&gt;/g,'>'));
+    const carouselContainer = document.querySelector('.carousel');
+
+// Create the previous arrow element
+const prevArrow = document.createElement('button');
+prevArrow.classList.add('slick-prev', 'slick-arrow');
+prevArrow.setAttribute('aria-label', 'Previous');
+prevArrow.textContent = 'Previous';
+
+// Create the next arrow element
+const nextArrow = document.createElement('button');
+nextArrow.classList.add('slick-next', 'slick-arrow');
+nextArrow.setAttribute('aria-label', 'Next');
+nextArrow.textContent = 'Next';
+
+// Append the arrow elements to the carousel container
+carouselContainer.appendChild(prevArrow);
+carouselContainer.appendChild(nextArrow);
   block.append(divv);
 //  block.append(txt)
 }
