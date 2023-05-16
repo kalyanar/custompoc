@@ -33,7 +33,8 @@ export default async function decorate(block) {
 	  var divv=document.createElement("div")
 	  divv.innerHTML=decodeHtmlEntity(txt.value).replace(/&lt;/g,'<').replace(/&gt;/g,'>');
 	 // console.log(decodeHtmlEntity(txt.value).replace(/&lt;/g,'<').replace(/&gt;/g,'>'));
-    const carouselContainer = document.querySelector('.carousel');
+    // const carouselContainer = document.querySelector('.carousel');
+    var carouselContainer= wrapper.firstChild;
 
 // Create the previous arrow element
 const prevArrow = document.createElement('button');
