@@ -1,4 +1,49 @@
-.carousel {
+/*.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel > div {
+  display: none;
+}
+
+.carousel > div:first-child {
+  display: block;
+}
+
+.carousel picture img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel h3,
+.carousel p {
+  margin: 0;
+  padding: 10px;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+}
+
+.carousel .slick-prev {
+  left: 10px;
+}
+
+.carousel .slick-next {
+  right: 10px;
+}
+*/
+.carousel.block {
   position: relative;
   overflow: hidden;
 }
