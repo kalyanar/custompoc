@@ -53,7 +53,11 @@ carouselContainer.appendChild(prevArrow);
 carouselContainer.appendChild(nextArrow);
   block.append(divv);
 //  block.append(txt)
-  
+  $('.carousel').slick({
+    arrows: true,
+    prevArrow: $('.slick-prev'),
+    nextArrow: $('.slick-next')
+  });
 }
   
 }
