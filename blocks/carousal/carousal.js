@@ -2,13 +2,7 @@ import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
 import { getMetadata, decorateIcons } from '../../scripts/lib-franklin.js';
 
 
-$(document).ready(function() {
-  $('.carousel').slick({
-    arrows: true,
-    prevArrow: $('.slick-prev'),
-    nextArrow: $('.slick-next')
-  });
-});
+
 
 // media query match that indicates mobile/tablet width
 function decodeHtml(html) {

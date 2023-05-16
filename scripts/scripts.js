@@ -125,6 +125,12 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
+  $('.carousel').slick({
+    arrows: true,
+    prevArrow: $('.slick-prev'),
+    nextArrow: $('.slick-next')
+  });
+
 }
 
 loadPage();
