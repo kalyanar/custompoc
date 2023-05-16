@@ -1,5 +1,24 @@
 .carousel {
   display: flex;
+  overflow: hidden;
+}
+
+.carousel > div {
+  flex: 0 0 100%;
+}
+
+.carousel picture img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel h3,
+.carousel p {
+  margin: 0;
+  padding: 10px;
+}
+/*.carousel {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -14,12 +33,12 @@
   width: 100%;
   height: auto;
 }
-
-.carousel h3,
+*/
+/*.carousel h3,
 .carousel p {
   margin: 0;
   padding: 10px;
-}
+}*/
 
 .carousel button {
   position: absolute;
