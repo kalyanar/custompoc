@@ -26,7 +26,7 @@ export default async function decorate(block) {
   if (resp.ok) {
     const html = await resp.text();
 		const htmldecoded=decodeHtml(html)
-	console.log(htmldecoded);
+	// console.log(htmldecoded);
 	  // div.innerHTML = htmldecoded.replace(/<br>/g,'').replace(/<p>/g,'').trim();
       var txt = document.createElement("textarea");
       txt.innerHTML = decodeHtmlEntity(htmldecoded.replace(/<br>/g,'').replace(/<p><\/p>/g,'').replace(/<p>/g,'').trim());
